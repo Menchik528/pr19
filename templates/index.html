@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервисный центр | Главная</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>🔧 СервисЦентр</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="active">Главная</a></li>
+                <li><a href="/services">Услуги</a></li>
+                <li><a href="/about">О нас</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Профессиональный ремонт техники</h1>
+                <p>Быстро, качественно, с гарантией</p>
+                <a href="#request-form" class="btn-primary">Оставить заявку</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Почему выбирают нас?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Быстрый ремонт</h3>
+                        <p>В среднем 1-2 дня на диагностику и ремонт</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Оригинальные запчасти</h3>
+                        <p>Используем только качественные комплектующие</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✅</div>
+                        <h3>Гарантия до 12 месяцев</h3>
+                        <p>На все виды работ предоставляем гарантию</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Доступные цены</h3>
+                        <p>Лучшее соотношение цены и качества</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="request-form" class="request-section">
+            <div class="container">
+                <h2>Оставить заявку на ремонт</h2>
+                <form action="/submit_request" method="POST" class="request-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="device">Тип устройства:</label>
+                        <select id="device" name="device" required>
+                            <option value="">Выберите устройство</option>
+                            <option value="phone">Смартфон</option>
+                            <option value="laptop">Ноутбук</option>
+                            <option value="tablet">Планшет</option>
+                            <option value="pc">Компьютер</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="problem">Описание проблемы:</label>
+                        <textarea id="problem" name="problem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Сервисный центр. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

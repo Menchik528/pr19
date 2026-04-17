@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Сервисный центр</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>🔧 СервисЦентр</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/services" class="active">Услуги</a></li>
+                <li><a href="/about">О нас</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Наши услуги</h1>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📱 Ремонт смартфонов</h3>
+                    <ul>
+                        <li>Замена экрана</li>
+                        <li>Замена аккумулятора</li>
+                        <li>Ремонт кнопок и разъемов</li>
+                        <li>Восстановление после воды</li>
+                    </ul>
+                    <p class="price">от 1000 ₽</p>
+                </div>
+                <div class="service-card">
+                    <h3>💻 Ремонт ноутбуков</h3>
+                    <ul>
+                        <li>Замена матрицы</li>
+                        <li>Чистка от пыли</li>
+                        <li>Замена термопасты</li>
+                        <li>Ремонт клавиатуры</li>
+                    </ul>
+                    <p class="price">от 1500 ₽</p>
+                </div>
+                <div class="service-card">
+                    <h3>🖥️ Ремонт компьютеров</h3>
+                    <ul>
+                        <li>Диагностика</li>
+                        <li>Замена комплектующих</li>
+                        <li>Установка ПО</li>
+                        <li>Удаление вирусов</li>
+                    </ul>
+                    <p class="price">от 800 ₽</p>
+                </div>
+                <div class="service-card">
+                    <h3>📟 Ремонт планшетов</h3>
+                    <ul>
+                        <li>Замена стекла</li>
+                        <li>Ремонт дисплея</li>
+                        <li>Замена аккумулятора</li>
+                        <li>Восстановление ПО</li>
+                    </ul>
+                    <p class="price">от 1200 ₽</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Сервисный центр. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

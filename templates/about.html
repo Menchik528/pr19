@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Сервисный центр</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>🔧 СервисЦентр</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/services">Услуги</a></li>
+                <li><a href="/about" class="active">О нас</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">О нашем сервисном центре</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Профессиональный подход к каждому клиенту</h2>
+                    <p>Наш сервисный центр работает на рынке более 5 лет. За это время мы отремонтировали более 10 000 устройств и получили тысячи благодарных отзывов.</p>
+                    
+                    <h3>Наши преимущества:</h3>
+                    <ul>
+                        <li>✅ Опытные мастера с профильным образованием</li>
+                        <li>✅ Современное диагностическое оборудование</li>
+                        <li>✅ Прямые поставки запчастей от производителей</li>
+                        <li>✅ Бесплатная диагностика при последующем ремонте</li>
+                        <li>✅ Выдача бесплатного телефона на время ремонта</li>
+                    </ul>
+                    
+                    <h3>Наша миссия:</h3>
+                    <p>Сделать ремонт техники быстрым, доступным и качественным для каждого клиента.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">лет на рынке</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10000+</div>
+                        <div class="stat-label">отремонтированных устройств</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">довольных клиентов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Сервисный центр. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
